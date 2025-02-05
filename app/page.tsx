@@ -1,14 +1,18 @@
 "use client";
 
 import React from "react";
-
-
+import { FaRocket, FaBolt, FaCrown } from "react-icons/fa";
 
 export default function LandingPage() {
   return (
     <div className="min-h-screen bg-gradient-to-r from-blue-500 to-purple-600 text-white flex flex-col items-center text-center p-6">
+      {/* Header */}
+      <header className="w-full py-6 text-center text-3xl font-extrabold drop-shadow-lg">
+        GrowthFlow
+      </header>
+      
       {/* Hero Section */}
-      <div className="max-w-3xl mt-20">
+      <div className="max-w-3xl mt-10">
         <h1 className="text-5xl font-extrabold drop-shadow-lg">
           Aumenta tus Ventas con Publicidad 100% Automatizada
         </h1>
@@ -21,7 +25,7 @@ export default function LandingPage() {
       </div>
 
       {/* Beneficios */}
-      <div className="max-w-4xl mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="max-w-4xl mt-16 grid grid-cols-1 md-grid-cols-3 gap-8">
         <div className="p-8 bg-white text-gray-900 shadow-xl rounded-2xl">
           <h3 className="text-2xl font-bold">Optimización con IA</h3>
           <p className="text-gray-700 mt-2">Mejoramos automáticamente tus anuncios 24/7.</p>
@@ -41,16 +45,19 @@ export default function LandingPage() {
         <h2 className="text-3xl font-extrabold drop-shadow-lg">Nuestros Planes</h2>
         <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="p-8 bg-white text-gray-900 shadow-xl rounded-2xl">
+            <FaRocket className="text-blue-500 text-4xl mx-auto mb-4" />
             <h3 className="text-2xl font-bold">Básico</h3>
             <p className="text-gray-700">Google Ads - $99/mes</p>
             <button className="mt-4 w-full px-6 py-3 bg-blue-500 hover:bg-blue-600 transition text-white font-bold rounded-lg">Seleccionar</button>
           </div>
           <div className="p-8 bg-yellow-500 text-white shadow-xl rounded-2xl border-4 border-white">
+            <FaBolt className="text-white text-4xl mx-auto mb-4" />
             <h3 className="text-2xl font-bold">Pro</h3>
             <p>Google + Facebook Ads - $199/mes</p>
             <button className="mt-4 w-full px-6 py-3 bg-white text-yellow-500 font-bold rounded-lg shadow-lg">Seleccionar</button>
           </div>
           <div className="p-8 bg-white text-gray-900 shadow-xl rounded-2xl">
+            <FaCrown className="text-blue-500 text-4xl mx-auto mb-4" />
             <h3 className="text-2xl font-bold">Elite</h3>
             <p className="text-gray-700">Todas las plataformas - $399/mes</p>
             <button className="mt-4 w-full px-6 py-3 bg-blue-500 hover:bg-blue-600 transition text-white font-bold rounded-lg">Seleccionar</button>
